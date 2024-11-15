@@ -13,5 +13,5 @@ interface SaveResultDao {
     suspend fun insertResult(result: SaveResult)
 
     @Query("SELECT * FROM save_result")
-    suspend fun getAllResult(): Flow<List<SaveResult>>
+    suspend fun getAllResult(): List<SaveResult>
 }

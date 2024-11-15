@@ -9,5 +9,5 @@ data class SaveResult(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val imageUri: String = "",
     val result: String = "",
-    val confidenceScore: Float
+    val confidenceScore: String
 )
